@@ -1,0 +1,47 @@
+section {
+    width: 80%;
+    height: 80vh;
+    background-color: #0fa3b1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 80%;
+    height: 80%;
+    background-color: #DBE9EE;
+    overflow-x: scroll; /* Permite el scroll horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    scroll-snap-type: x mandatory;
+    scrollbar-width:thin; /*si se cambia a NONE el scroll funciona pero no se muestra la barra"*/
+    }
+
+.item {
+    font-size: 100px;
+    width: 100%; /* Cada item ocupará el 20% del ancho del contenedor */
+    text-align: center;
+    flex: 0 0 auto; /* No permite que los elementos flexibles crezcan o se contraigan */
+    scroll-snap-align: center; /* Hace que el scroll se enganche al principio de cada item */
+}
+
+.item-1 {
+    background-color: #E8871E;
+}
+
+.item-2 {
+    background-color: #FF6B6B;
+}
+
+.item-3{
+    background-color: #FFE66D;
+}
+
+.item-4 {
+    background-color: #4ECDC4;
+}
+.item-5 {
+background-color: #7D82B8;
+}
